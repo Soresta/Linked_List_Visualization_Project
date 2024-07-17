@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labgui.HelloController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="1400.0" style="-fx-background-color: rgb(42, 40, 44);">
+         <children>
+            <Text fill="#7b767a" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Çift Yönlü Bağlı Liste">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="304.0" layoutY="13.0" mnemonicParsing="false" onAction="#ekle" style="-fx-background-color: rgb(219, 75, 67);" text="Ekle" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="377.0" layoutY="13.0" mnemonicParsing="false" onAction="#sil" prefHeight="35.0" prefWidth="61.0" style="-fx-background-color: rgb(219, 75, 67);" text="Sil" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="931.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: rgb(219, 75, 67);" text="Ortaya Ekle" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1083.0" layoutY="11.0" mnemonicParsing="false" onAction="#ortadanSil" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: rgb(219, 75, 67);" text="Ortadan Sil" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="446.0" layoutY="13.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: rgb(219, 75, 67);" text="Elemen Ara" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="803.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: rgb(219, 75, 67);" text="Başa Ekle" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="616.0" layoutY="12.0" mnemonicParsing="false" onAction="#printList1" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: rgb(219, 75, 67);" text="Listeyi Sırala" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1253.0" layoutY="12.0" mnemonicParsing="false" onAction="#bastanSil" style="-fx-background-color: rgb(219, 75, 67);" text="Bastan Sil" textFill="#460000">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="recPane" layoutY="59.0" onMouseClicked="#tiklanma" prefHeight="592.0" prefWidth="1400.0" style="-fx-background-color: rgb(10, 6, 9);">
+         <children>
+            <Text fill="#7b767a" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eleman ismi">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameField" layoutX="145.0" layoutY="18.0" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: rgb(219, 75, 67);">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="14.0" />
+               </font></TextField>
+            <Text fill="#7b767a" layoutX="284.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eleman Sayısı : 0">
+               <font>
+                  <Font name="DejaVu Sans Mono" size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+   </children>
+</AnchorPane>
