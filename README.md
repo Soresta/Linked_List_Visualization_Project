@@ -1,5 +1,5 @@
 # Türkçe
-#Bağlı Liste Görselleştirme Projesi 📊
+# Bağlı Liste Görselleştirme Projesi 📊
 
 Hoş geldiniz! Bu repoda, Bağlı Liste veri yapısının çeşitli işlemlerini animasyonlarla görselleştiren bir masaüstü uygulaması bulunmaktadır. Kullanıcıların Bağlı Listelerin nasıl çalıştığını anlamalarına yardımcı olmayı amaçlayan etkileşimli ve eğitici bir deneyim sunar.
 ## Ekran görüntüleri:
